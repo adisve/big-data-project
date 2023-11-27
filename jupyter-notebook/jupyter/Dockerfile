@@ -8,6 +8,8 @@ RUN apt-get update && \
 
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 
+RUN chown -R jovyan:users /home/jovyan
+
 USER jovyan
 
-RUN python -m pip install --upgrade pip && pip install pyspark pandas matplotlib seaborn
+RUN pip install pyspark pandas matplotlib torch scikit-learn
