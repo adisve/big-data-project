@@ -25,3 +25,8 @@ docker-compose up -d
 ```
 
 The Jupyter notebook server is now running on port 8888, without token authentication.
+
+## Authors
+
+- [Adis Veletanlic](https://github.com/adisve)
+- [Dzenis Madzovic](https://github.com/psychicplatypus)
