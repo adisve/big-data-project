@@ -19,13 +19,9 @@ This project is a part of the Big Data course at the Kristianstad University. Th
 
 3. Navigate to the project root
 
-4. Create a python virtual environment
-```sh
-pipenv install
-```
-5. Source the virtual environment
-```sh
-pipenv shell
+6. Enter the jupyter-notebook directory and run the following command to start the Jupyter Notebook server:
+```bash
+docker-compose up -d
 ```
 
-6. 
+The Jupyter notebook server is now running on port 8888, without token authentication.
