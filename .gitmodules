@@ -1,0 +1,3 @@
+[submodule "hadoop-spark-cluster"]
+	path = hadoop-spark-cluster
+	url = git@github.com:adisve/hadoop-spark-cluster.git
