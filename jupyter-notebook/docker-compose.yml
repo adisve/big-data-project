@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  jupyter-notebook:
+    build:
+      context: ./jupyter
+      dockerfile: Dockerfile
+    container_name: jupyter-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks/:/home/jovyan/work
+      - ./spark/:/home/jovyan/work/spark
+    networks:
+      - default
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    command: start-notebook.sh --NotebookApp.token=''
+
+networks:
+  default:
+    name: shared-spark-hadoop-network
+    external: true
