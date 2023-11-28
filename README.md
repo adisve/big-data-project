@@ -19,7 +19,8 @@ This project is a part of the Big Data course at the Kristianstad University. Th
 
 3. Navigate to the project root
 
-6. Enter the jupyter-notebook directory and run the following command to start the Jupyter Notebook server:
+4. Enter the jupyter-notebook directory and run the following command to start the Jupyter Notebook server:
+
 ```bash
 docker-compose up -d
 ```
