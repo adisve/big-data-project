@@ -16,4 +16,4 @@ RUN chown -R jovyan:users /home/jovyan
 
 USER jovyan
 
-RUN pip install pyspark pandas matplotlib torch scikit-learn
+RUN pip install pyspark pandas matplotlib torch scikit-learn wordcloud

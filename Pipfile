@@ -9,6 +9,7 @@ pandas = "*"
 matplotlib = "*"
 torch = "*"
 scikit-learn = "*"
+nltk = "*"
 
 [dev-packages]
 

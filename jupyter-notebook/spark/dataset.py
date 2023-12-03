@@ -26,7 +26,7 @@ class Dataset(object):
             .option("header", "true")
             .load(self.hdfs_path)
         )
-        df = df.drop("downs", "ups", "subreddit")
+        df = df[["body", "score", "subreddit"]]
         df = df.filter(df.body != "[deleted]")
         df = df.filter(df.body != "[removed]")
         self._df = df
