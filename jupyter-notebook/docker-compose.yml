@@ -10,7 +10,6 @@ services:
       - "8888:8888"
     volumes:
       - ./notebooks/:/home/jovyan/work/notebooks
-      - ./spark/:/home/jovyan/work/notebooks/spark
     networks:
       - default
     environment:
