@@ -16,7 +16,7 @@ class Dataset(object):
     def _init_session(self, spark_master):
         self.spark = (
             SparkSession.builder.master(spark_master)
-            .appName("Pre-processing Reddit Comments")
+            .appName("Reddit word analysis")
             .getOrCreate()
         )
 
